@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Formulario</title>
+<body bgcolor="lightgray">
+    <h1>Formulário</h1>
+    <form action="http://google.com">
+        <br>
+            <label>
+                Endereço:
+            </label>
+        <input type="text" name="endereco" value="Digite aqui" size="40" maxlenght="150">
+        <br>
+        <label>
+            Data de nascimento:
+        </label>
+        <input type="date" name="Data-Nascimento">
+        <br>
+        <label>
+            Senha:
+        </label>
+        <input type="password" name="Senha">
+        <br>
+        <label>
+            Data e Hora de entrada:
+        </label>
+        <input type="datetime-local" name="DataHora_entrada">
+        <br>
+        <input type="radio" id="alt 1" name="alternativa" value="A"/> <label -for="alt 1">Alternativa A</label>
+        <input type="radio" id="alt 2" name="alternativa" value="B"/> <label -for="alt 2">Alternativa B</label>
+        <input type="radio" id="alt 3" name="alternativa" value="C"/> <label -for="alt 3">Alternativa C</label>
+        <input type="radio" id="alt 4" name="alternativa" value="D"/> <label -for="alt 4">Alternativa D</label>
+        <br>
+        <input type="checkbox" id="chk 1" name="opcao" value="A"/><label -for="chk 1">Opção A</label>
+        <input type="checkbox" id="chk 2" name="opcao" value="B"/><label -for="chk 2">Opção B</label>
+        <input type="checkbox" id="chk 3" name="opcao" value="C"/><label -for="chk 3">Opção C</label>
+        <input type="checkbox" id="chk 4" name="opcao" value="D"/><label -for="chk 4">Opção D</label>
+        <br>
+        <label>Telefone:</label>
+        <input type="Tel" name="Telefone" size="10" maxlenght="8"/>
+        <br>
+        <label>Email:</label>
+        <input type="email" name="Email" size="50" maxlength="80"/>
+        <br>
+        <label>
+            Pesquisa:
+        </label>
+        <input type="search" name="Busca" size="50" maxlength="80"/>
+        <br>
+        <label>
+            URL:
+        </label>
+        <input type="url" name="Site" size="50" maxlength="80"/>
+        <br>
+        <label>Estado:</label>
+        <select name="Estado">
+            <option value="AC">Acre</option>
+            <option value="AL">Alagoas</option>
+            <option value="SP">São Paulo</option>
+            <option value="RJ">Rio de Janeiro</option> 
+        </select>
+        <br>
+        <label>Mensagem</label>
+        <textarea name="mensagem" rows="20" cols="50"></textarea>
+        <br>
+        <input type="submit" name="Enviar" value="Salvar"/>
+        <br>
+        <input type="button" name="Chamar" value="Chamar" onclick="alert('oi')"/>
+    </form>
